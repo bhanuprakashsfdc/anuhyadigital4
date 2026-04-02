@@ -90,3 +90,75 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.skip-to-content {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.skip-to-content:focus {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 200;
+  width: auto;
+  height: auto;
+  padding: 0.75rem 1.5rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  background: linear-gradient(135deg, #ADFF85 0%, #2a7302 100%);
+  color: #062100;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  border-radius: 0.375rem;
+  text-decoration: none;
+}
+
+/* Focus Visible */
+*:focus-visible {
+  outline: 2px solid #ADFF85;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(45, 54, 56, 0.6);
+  backdrop-filter: blur(24px);
+}
