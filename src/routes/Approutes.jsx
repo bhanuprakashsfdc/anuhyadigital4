@@ -11,6 +11,8 @@ const TeamPage = lazy(() => import('../pages/TeamPage.jsx'));
 const ServicePage = lazy(() => import('../pages/ServicePage.jsx'));
 const ProjectPage = lazy(() => import('../pages/ProjectPage.jsx'));
 const BlogPage = lazy(() => import('../pages/BlogPage.jsx'));
+const AllBlogsPage = lazy(() => import('../pages/AllBlogsPage.jsx'));
+const BlogPostPage = lazy(() => import('../pages/BlogPostPage.jsx'));
 const ContactPage = lazy(() => import('../pages/ContactPage.jsx'));
 const PrivacyPolicyPage = lazy(() => import('../pages/PrivacyPolicyPage.jsx'));
 const TermsConditionsPage = lazy(() => import('../pages/TermsConditionsPage.jsx'));
@@ -20,7 +22,7 @@ const SalesforceConsulting = lazy(() => import('../components/SEO/SalesforceCons
 const PageLoader = () => (
   <div className="min-h-screen flex flex-col items-center justify-center gap-4">
     <div className="page-loader"></div>
-    <p className="text-sm text-on-surface-variant font-label tracking-wider animate-pulse">thinking...</p>
+    <p className="text-sm text-on-surface-variant font-label tracking-wider animate-pulse">Thinking...</p>
   </div>
 );
 
@@ -36,6 +38,8 @@ const AppRoutes = () => {
           <Route path="/services.html" element={<ServicePage />} />
           <Route path="/projects.html" element={<ProjectPage />} />
           <Route path="/blogs.html" element={<BlogPage />} />
+          <Route path="/blog/:slug.html" element={<BlogPostPage />} />
+          <Route path="/all-blogs.html" element={<AllBlogsPage />} />
           <Route path="/contact.html" element={<ContactPage />} />
           <Route path="/privacy-policy.html" element={<PrivacyPolicyPage />} />
           <Route path="/terms-conditions.html" element={<TermsConditionsPage />} />
