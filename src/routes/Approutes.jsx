@@ -18,8 +18,9 @@ const SEOPage = lazy(() => import('../components/SEO/Website/SEOPage.jsx'));
 const SalesforceConsulting = lazy(() => import('../components/SEO/SalesforceConsulting.jsx'));
 
 const PageLoader = () => (
-  <div className="min-h-screen flex items-center justify-center">
-    <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin"></div>
+  <div className="min-h-screen flex flex-col items-center justify-center gap-4">
+    <div className="page-loader"></div>
+    <p className="text-sm text-on-surface-variant font-label tracking-wider animate-pulse">thinking...</p>
   </div>
 );
 

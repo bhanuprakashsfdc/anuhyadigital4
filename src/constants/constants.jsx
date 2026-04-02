@@ -12,4 +12,4 @@ export const WEBSITE_LOCATION = "https://maps.app.goo.gl/EgZcvjErs5Rjx1jH6";
 export const WEBSITE_FB = "https://www.facebook.com/anuhyadigital/";
 export const WEBSITE_X = "https://twitter.com/anuhyadigital";
 export const WEBSITE_Linkedin = "https://in.linkedin.com/company/anuhya-digital";
-export const WEBSITE_Insta = "#";
+export const WEBSITE_Insta = "https://www.instagram.com/anuhyadigital/";

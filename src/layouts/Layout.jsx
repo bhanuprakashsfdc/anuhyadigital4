@@ -6,10 +6,11 @@ import Map from '../components/Map';
 import WebDesignKeywords from '../components/SEO/WebDesignKeywords';
 import SalesforceKeywords from '../components/SEO/SalesforceKeywords';
 import ChatWidget from '../components/ChatWidget/ChatWidget';
+import MobileStickyBar from '../components/MobileStickyBar/MobileStickyBar';
 
 const Layout = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-16 lg:pb-0">
       <Header />
       <main>
         <Outlet />
@@ -19,6 +20,7 @@ const Layout = () => {
       <Map />
       <Footer />
       <ChatWidget />
+      <MobileStickyBar />
     </div>
   )
 }

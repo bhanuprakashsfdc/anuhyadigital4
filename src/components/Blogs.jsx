@@ -32,14 +32,19 @@ const Blogs = () => {
   }, []);
 
   const BlogSkeleton = () => (
-    <div className="card-glass overflow-hidden animate-pulse">
-      <div className="aspect-video bg-surface-high"></div>
+    <div className="card-glass overflow-hidden">
+      <div className="aspect-video bg-surface-high flex items-center justify-center">
+        <div className="blog-skeleton-loader"></div>
+      </div>
       <div className="p-6 space-y-3">
-        <div className="h-3 bg-surface-high rounded w-1/3"></div>
-        <div className="h-5 bg-surface-high rounded w-full"></div>
-        <div className="h-5 bg-surface-high rounded w-2/3"></div>
-        <div className="h-3 bg-surface-high rounded w-full"></div>
-        <div className="h-3 bg-surface-high rounded w-4/5"></div>
+        <div className="flex items-center gap-2 mb-2">
+          <div className="blog-skeleton-loader" style={{width: '60px', height: '8px'}}></div>
+          <span className="text-xs text-on-surface-variant animate-pulse">thinking...</span>
+        </div>
+        <div className="h-5 bg-surface-high rounded w-full animate-pulse"></div>
+        <div className="h-5 bg-surface-high rounded w-2/3 animate-pulse"></div>
+        <div className="h-3 bg-surface-high rounded w-full animate-pulse"></div>
+        <div className="h-3 bg-surface-high rounded w-4/5 animate-pulse"></div>
       </div>
     </div>
   );
