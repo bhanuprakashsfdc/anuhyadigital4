@@ -1,0 +1,52 @@
+.client_section {
+    padding: 40px 10%;
+  }
+  
+  .client_item {
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    max-width: 20%;
+  }
+  
+  .client_item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .client_carousel_track {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .client_dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .client_dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .client_dot.active {
+    background-color: #333;
+  }
+
+  @media (max-width: 600px) {
+    .client_section {
+      padding: 40px 5%;
+    }
+    .client_item {
+      max-width: 50%;
+    }
+  }

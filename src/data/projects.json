@@ -1,0 +1,90 @@
+[
+    {
+      "id": 1,
+      "category": "salesforce",
+      "image": "assets/images/clients/webimages/salesforce.png",
+      "title": "Salesforce Implementation ",
+      "description": "Leading Oil Manufacture in EMEA",
+      "link": "/"
+    },
+    {
+      "id": 2,
+      "category": "seo",
+      "image": "assets/images/clients/webimages/adityasree.png",
+      "title": "Responsive Website Design",
+      "description": "Sri Aditya Cargo Packers and Movers",
+      "link": "http://adityasricargopackersandmovers.com/"
+    },
+    {
+      "id": 3,
+      "category": "webdev",
+      "image": "assets/images/clients/webimages/easypomodoro.png",
+      "title": "SASS Platform",
+      "description": "EasyPomodoro.com",
+      "link": "service-details.html"
+    },
+    {
+      "id": 4,
+      "category": "webdev",
+      "image": "assets/images/clients/webimages/arunpackers.png",
+      "title": "Arun Packers and Movers",
+      "description": "Arun Packers and Movers",
+      "link": "https://arunpackersandmovers.in/"
+    },
+    {
+      "id": 5,
+      "category": "webdev",
+      "image": "assets/images/clients/webimages/jbpackers.png",
+      "title": "JB All India Packers and Movers",
+      "description": "JB All India Packers and Movers",
+      "link": "https://arunpackersandmovers.in/"
+    },
+    {
+      "id": 6,
+      "category": "webdev",
+      "image": "assets/images/clients/webimages/avasadental.png",
+      "title": "Avasa Dental",
+      "description": "Avasa Dental",
+      "link": "https://avasa-dental.netlify.app/"
+    },
+    {
+        "id": 7,
+        "category": "seo",
+        "image": "assets/images/clients/webimages/srichandana.png",
+        "title": "Sri Chandana Packers And Movers",
+        "description": "Sri Chandana Packers And Movers",
+        "link": "https://srichandanapackersandmovers.com/"
+    },
+    {
+        "id": 8,
+        "category": "webdev",
+        "image": "assets/images/clients/webimages/janupackers.png",
+        "title": "Janu packers and movers",
+        "description": "Janu packers and movers",
+        "link": "https://janupackersandmovers.com/"
+    },
+    {
+        "id": 9,
+        "category": "smm",
+        "image": "assets/images/clients/webimages/gs7msmc.png",
+        "title": "GS7MSMC",
+        "description": "GS7MSMC",
+        "link": "https://gs7msmc.com/"
+    },
+    {
+        "id": 10,
+        "category": "salesforce",
+        "image": "assets/images/clients/webimages/salesforce.png",
+        "title": "Salesforce Implementation",
+        "description": "Leading Gas Manufacture in Australia",
+        "link": "/"
+    }, 
+    {
+        "id": 11,
+        "category": "salesforce",
+        "image": "assets/images/clients/webimages/salesforce.png",
+        "title": "Salesforce Implementation",
+        "description": "Leading Education firm in UK",
+        "link": "/"
+    }
+]

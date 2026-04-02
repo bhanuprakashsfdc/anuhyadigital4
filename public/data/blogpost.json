@@ -1,0 +1,57 @@
+[
+    {
+      "img": "assets/images/img/blog_salesforce1.png",
+      "date": "10 Jul",
+      "author": "Emily Clark",
+      "comments": "15 Comments",
+      "title": "Top 5 Salesforce Features You Should Know About",
+      "description": "Discover the top 5 Salesforce features that can transform your business processes and boost productivity.",
+      "link": "blog-details-salesforce-features.html"
+    },
+    {
+      "img": "assets/images/img/blog_webstack1.png",
+      "date": "12 Jul",
+      "author": "John Doe",
+      "comments": "20 Comments",
+      "title": "The Future of Web Development: Latest Web Stacks",
+      "description": "An in-depth look at the latest web stacks and how they are shaping the future of web development.",
+      "link": "blog-details-web-stacks.html"
+    },
+    {
+      "img": "assets/images/img/blog_seo1.png",
+      "date": "14 Jul",
+      "author": "Jane Smith",
+      "comments": "25 Comments",
+      "title": "SEO Tips & Tricks: How to Improve Your Website Ranking",
+      "description": "Learn the most effective SEO tips and tricks to improve your website's ranking on search engines.",
+      "link": "blog-details-seo-tips.html"
+    },
+    {
+      "img": "assets/images/img/blog_salesforce2.png",
+      "date": "16 Jul",
+      "author": "Michael Brown",
+      "comments": "18 Comments",
+      "title": "How to Implement Salesforce for Small Businesses",
+      "description": "Step-by-step guide on how small businesses can implement Salesforce to streamline operations.",
+      "link": "blog-details-salesforce-implementation.html"
+    },
+    {
+      "img": "assets/images/img/blog_webstack2.png",
+      "date": "18 Jul",
+      "author": "Sophia Green",
+      "comments": "12 Comments",
+      "title": "React vs. Angular: Which is the Best Framework for 2024?",
+      "description": "A detailed comparison of React and Angular to help you choose the best framework for your project in 2024.",
+      "link": "blog-details-react-vs-angular.html"
+    },
+    {
+      "img": "assets/images/img/blog_seo2.png",
+      "date": "20 Jul",
+      "author": "James Wilson",
+      "comments": "30 Comments",
+      "title": "Advanced SEO Techniques: Going Beyond the Basics",
+      "description": "Explore advanced SEO techniques that go beyond the basics to help you achieve higher search engine rankings.",
+      "link": "blog-details-advanced-seo.html"
+    }
+  ]
+  

@@ -1,0 +1,58 @@
+.vital-ingredients {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .vital-ingredients h2 {
+    margin-bottom: 20px;
+  }
+  
+  .ingredients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .ingredient-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .ingredient-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .ingredient-item h3 {
+    margin: 10px 0;
+  }
+  
+  .ingredient-item p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* -- Media Queries -- */
+@media (max-width:1200px) {
+
+}
+@media (max-width:900px) {
+  .ingredients-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+@media (max-width:600px) {
+  .ingredients-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+@media (max-width:400px) {
+  .ingredients-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

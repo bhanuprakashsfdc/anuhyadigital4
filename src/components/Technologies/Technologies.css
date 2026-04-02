@@ -1,0 +1,69 @@
+.technologies {
+    text-align: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .technologies h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .technologies p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tabs button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: border-bottom 0.3s;
+  }
+  
+  .tabs button:hover {
+    border-bottom: 2px solid lightgray;
+  }
+  
+  .tabs button.active {
+    border-bottom: 2px solid red;
+  }
+  
+  .technology-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s;
+  }
+  
+  .tech-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .tech-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  

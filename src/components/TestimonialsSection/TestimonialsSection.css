@@ -1,0 +1,41 @@
+.testimonial_section {  
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.testimonial_right {
+  padding: 10px;
+  text-align: center;
+}
+
+.testimonial_right img {
+  max-width: 100%;
+  height: auto;
+}
+
+.testimonial_dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.testimonial_dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+  padding: 0;
+}
+
+.testimonial_dot.active {
+  background-color: #333;
+}
+
+@media (max-width: 600px) {
+  .testimonial_section {
+      padding: 40px 5%;
+  }
+}

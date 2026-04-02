@@ -1,0 +1,13 @@
+export const WEBSITE_NAME = "Anuhya Digital";
+export const WEBSITE_URL = "https://anuhyadigital.com/";
+export const WEBSITE_PHONE = "+91-8861789164";
+export const WEBSITE_PHONETag = "tel:08861789164";
+export const WEBSITE_EMAIL = "hello@anuhyadigital.com";
+export const WEBSITE_EMAILTag ="mailto:hello@anuhyadigital.com"
+export const WEBSITE_JOB_EMAIL = "careers@anuhyadigital.com";
+export const WEBSITE_ADDRESS = "Flat No 401, Sri Pradha Hills <br/> Thimmanaidupalem, <br/> Tirupati -517501, AP India";
+export const WEBSITE_LOCATION = "https://maps.app.goo.gl/EgZcvjErs5Rjx1jH6";
+export const WEBSITE_FB = "https://www.facebook.com/anuhyadigital/";
+export const WEBSITE_X = "https://twitter.com/anuhyadigital";
+export const WEBSITE_Linkedin = "https://in.linkedin.com/company/anuhya-digital";
+export const WEBSITE_Insta = "#";

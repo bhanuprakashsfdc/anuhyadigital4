@@ -1,0 +1,50 @@
+.creative_web_design_features {
+    padding: 60px 0;
+  }
+  
+  .features_heading .common_heading {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .features_heading .title_style {
+    margin-bottom: 20px;
+  }
+  
+  .features_heading h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .features_heading h2 {
+    font-size: 36px;
+    color: #5D46FD;
+  }
+  
+  .features_list ul {
+    list-style: none; /* Hides the bullet points */
+    padding: 0; /* Removes default padding */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .features_list ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    margin: 10px 20px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s;
+  }
+  
+  .features_list ul li .icon {
+    margin-right: 10px;
+    font-size: 3em; /* Adjust icon size as needed */
+    color: #24232a; /* Match the primary color */
+  }
+  
