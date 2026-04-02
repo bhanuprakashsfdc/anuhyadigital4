@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, CheckCircle2, Cpu, Globe, Zap, ShieldCheck } from 'lucide-react';
@@ -13,11 +14,12 @@ const Home = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0" aria-hidden="true">
           <div className="absolute inset-0 bg-surface/40 backdrop-blur-[2px]" />
           <img 
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSu3MXtIREmbgLMt0YLKFN7h-VQ6v24UOSa74FIl86iusk8vW_7iHGEoHO7YrStBU_er0E1Mgvu4dlczgc5dAQf5Ei-jjAwHJybEo_G4DQjvPLUaC96grq8ZU0BvLpeQDTyAmGL7hePcRXqDky3eIjIxjbBx2Gp93s9OgSvnlnklB9tAlo5_wKCPFMyrltL1Bkyk2e9YlWPlfaoukBLTqikgoA9_G7sSetYQ1-K7OFXCjFiIDlm8uiuCcZarKmL3gFav89E6vVLHc" 
-            alt="Anuhya Digital Background" 
+            alt="" 
+            loading="lazy"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-surface via-transparent to-surface" />
@@ -31,7 +33,7 @@ const Home = () => {
             className="space-y-10"
           >
             <div className="inline-flex items-center gap-3 px-4 py-1.5 bg-surface-container-low border border-outline-variant/15 rounded-full hover:border-primary/40 transition-colors cursor-default">
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" aria-hidden="true" />
               <span className="text-[0.65rem] font-bold font-label uppercase tracking-[0.2em] text-on-surface/70">Salesforce Certified Partner</span>
             </div>
             
@@ -44,12 +46,12 @@ const Home = () => {
             </p>
             
             <div className="flex flex-wrap gap-6 pt-6">
-              <button className="px-10 py-5 bg-gradient-to-br from-primary to-[#2a7302] text-[#062100] font-label font-black uppercase text-sm tracking-widest rounded-md hover:scale-105 transition-all shadow-[0_0_30px_rgba(173,255,133,0.3)] active:scale-95">
+              <Link to="/contact" className="px-10 py-5 bg-gradient-to-br from-primary to-[#2a7302] text-[#062100] font-label font-black uppercase text-sm tracking-widest rounded-md hover:scale-105 transition-all shadow-[0_0_30px_rgba(173,255,133,0.3)] active:scale-95 inline-flex items-center min-h-[44px]">
                 Start Your Journey
-              </button>
-              <button className="px-10 py-5 border border-outline-variant/30 text-primary font-label font-black uppercase text-sm tracking-widest rounded-md hover:bg-primary/10 transition-all">
+              </Link>
+              <Link to="/portfolio" className="px-10 py-5 border border-outline-variant/30 text-primary font-label font-black uppercase text-sm tracking-widest rounded-md hover:bg-primary/10 transition-all inline-flex items-center min-h-[44px]">
                 View Showcase
-              </button>
+              </Link>
             </div>
           </motion.div>
 
@@ -60,6 +62,7 @@ const Home = () => {
             whileHover={{ rotate: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             className="hidden lg:block relative"
+            aria-hidden="true"
           >
             <div className="glass-panel border border-outline-variant/20 rounded-xl p-10 shadow-2xl space-y-8">
               <div className="flex gap-2">
@@ -93,7 +96,7 @@ const Home = () => {
       </section>
 
       {/* Trusted By */}
-      <section className="py-20 surface-low">
+      <section className="py-20 surface-low" aria-label="Trusted by">
         <div className="max-w-screen-2xl mx-auto px-8">
           <p className="text-center font-headline font-bold text-[0.65rem] uppercase tracking-[0.4em] text-on-surface-variant mb-12">Engineered solutions for market leaders</p>
           <div className="flex flex-wrap justify-around items-center gap-16 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
@@ -112,10 +115,10 @@ const Home = () => {
               <h2 className="text-5xl md:text-6xl font-bold font-headline">Precision <span className="text-primary italic">Specialization</span></h2>
               <p className="text-lg text-on-surface-variant font-body">Architecting digital futures with the most robust tools in the technology ecosystem.</p>
             </div>
-            <button className="group flex items-center gap-3 text-primary font-black uppercase tracking-widest text-xs hover:gap-5 transition-all">
+            <Link to="/services" className="group flex items-center gap-3 text-primary font-black uppercase tracking-widest text-xs hover:gap-5 transition-all min-h-[44px]">
               Explore All Capabilities
               <ArrowRight size={18} />
-            </button>
+            </Link>
           </div>
 
           <div className="grid md:grid-cols-12 gap-8">
@@ -125,7 +128,7 @@ const Home = () => {
               className="md:col-span-8 surface-high p-12 rounded-xl border border-outline-variant/10 group transition-all"
             >
               <div className="flex flex-col h-full gap-12">
-                <Cpu size={48} className="text-primary group-hover:scale-110 transition-transform" strokeWidth={1} />
+                <Cpu size={48} className="text-primary group-hover:scale-110 transition-transform" strokeWidth={1} aria-hidden="true" />
                 <div className="space-y-4">
                   <h3 className="text-4xl font-bold">Salesforce Consulting</h3>
                   <p className="text-on-surface-variant max-w-xl leading-relaxed">
@@ -133,10 +136,10 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="grid grid-cols-2 gap-4 text-xs font-black uppercase tracking-widest text-on-surface-variant pt-8 border-t border-outline-variant/10">
-                  <div className="flex items-center gap-3"><CheckCircle2 size={16} className="text-primary" /> CPQ & Billing</div>
-                  <div className="flex items-center gap-3"><CheckCircle2 size={16} className="text-primary" /> Health Cloud</div>
-                  <div className="flex items-center gap-3"><CheckCircle2 size={16} className="text-primary" /> Marketing Cloud</div>
-                  <div className="flex items-center gap-3"><CheckCircle2 size={16} className="text-primary" /> Experience Cloud</div>
+                  <div className="flex items-center gap-3"><CheckCircle2 size={16} className="text-primary" aria-hidden="true" /> CPQ & Billing</div>
+                  <div className="flex items-center gap-3"><CheckCircle2 size={16} className="text-primary" aria-hidden="true" /> Health Cloud</div>
+                  <div className="flex items-center gap-3"><CheckCircle2 size={16} className="text-primary" aria-hidden="true" /> Marketing Cloud</div>
+                  <div className="flex items-center gap-3"><CheckCircle2 size={16} className="text-primary" aria-hidden="true" /> Experience Cloud</div>
                 </div>
               </div>
             </motion.div>
@@ -146,7 +149,7 @@ const Home = () => {
               whileHover={{ y: -5 }}
               className="md:col-span-4 surface-high p-12 rounded-xl border border-outline-variant/10 group flex flex-col justify-between"
             >
-              <Zap size={48} className="text-primary group-hover:scale-110 transition-transform" strokeWidth={1} />
+              <Zap size={48} className="text-primary group-hover:scale-110 transition-transform" strokeWidth={1} aria-hidden="true" />
               <div className="space-y-4 mt-12">
                 <h3 className="text-3xl font-bold">Web Mastery</h3>
                 <p className="text-on-surface-variant text-sm leading-relaxed">
@@ -163,7 +166,7 @@ const Home = () => {
               whileHover={{ y: -5 }}
               className="md:col-span-4 surface-high p-12 rounded-xl border border-outline-variant/10 group flex flex-col justify-between"
             >
-              <Globe size={48} className="text-primary group-hover:scale-110 transition-transform" strokeWidth={1} />
+              <Globe size={48} className="text-primary group-hover:scale-110 transition-transform" strokeWidth={1} aria-hidden="true" />
               <div className="space-y-4 mt-12">
                 <h3 className="text-3xl font-bold">SEO Authority</h3>
                 <p className="text-on-surface-variant text-sm leading-relaxed">
@@ -181,7 +184,7 @@ const Home = () => {
               className="md:col-span-8 surface-low p-12 rounded-xl border border-outline-variant/10 group flex items-start justify-between gap-12"
             >
               <div className="space-y-8 flex-1">
-                <ShieldCheck size={48} className="text-primary" strokeWidth={1} />
+                <ShieldCheck size={48} className="text-primary" strokeWidth={1} aria-hidden="true" />
                 <div className="space-y-4">
                   <h3 className="text-3xl font-bold">Modern Marketing Ops</h3>
                   <p className="text-on-surface-variant text-sm leading-relaxed">
@@ -189,7 +192,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="hidden lg:block w-1/3 aspect-video bg-surface-container-highest rounded-lg overflow-hidden grayscale brightness-50 group-hover:grayscale-0 transition-all duration-700">
+              <div className="hidden lg:block w-1/3 aspect-video bg-surface-container-highest rounded-lg overflow-hidden grayscale brightness-50 group-hover:grayscale-0 transition-all duration-700" aria-hidden="true">
                 <div className="w-full h-full bg-gradient-to-br from-primary/20 to-transparent flex items-center justify-center">
                   <div className="w-16 h-[2px] bg-primary/30 rotate-45" />
                 </div>
@@ -200,11 +203,11 @@ const Home = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-32 surface-low">
+      <section className="py-32 surface-low" aria-label="Testimonials">
         <div className="max-w-screen-2xl mx-auto px-8 space-y-20">
           <div className="text-center space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold">Voices of <span className="text-primary">Precision</span></h2>
-            <div className="w-20 h-1 cyber-gradient mx-auto opacity-30" />
+            <div className="w-20 h-1 cyber-gradient mx-auto opacity-30" aria-hidden="true" />
           </div>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -212,20 +215,17 @@ const Home = () => {
               {
                 text: "Anuhya Digital transformed our Salesforce mess into a streamlined engine. Their technical depth in Apex is unmatched.",
                 author: "Sarah Jenkins",
-                role: "CTO, CloudScale Systems",
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDOjNRVQna52E1jc8BX7k79FSDeYbkvU7ILRuMo_9VztIh2KCmwDsx8QYAMgvDs75_ItJbYJGrkdETnctKEmmg3HKyUEJDo-An50fysiDqogWpDtThYy4ojvpAukRThi9LrgmCkhmlnZWxIOrBjBBeNRzHluXpHcSrzHPybI7BZJT1g3WOQMkikyE8wntLCMGBNRry-sMFKCIp-8t2zlTBMDWXGVSu-CMO-y1QpfuZ6pfKJXmwQQtA-ERGRUOGnoo9UJGCTXjDaXuE"
+                role: "CTO, CloudScale Systems"
               },
               {
                 text: "Their web team built us a storefront that increased mobile conversions by 140%. True architects of the digital space.",
                 author: "Marcus Chen",
-                role: "Founder, Nexus Retail",
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDvnyGuvs-JJL3lfgQXFtf_dOtbOtfvtpc2mClWTLb0oSfeID3Zb4YAJUIpe4K6wvm14XUQKec27FKs-P09yOzDKtyliwETH-N9iss5tLk75-1eOCHlocDjR57AGLqM7fzZ_Z6BhX-WIWtqk4i7LomCnw5QVc47Y79mgZeeWgiDjn2buglUR2kX1OJpEnXWLZP-JnpfxHuLM6Ps85BSQqQyVViqTdkHdLQ5yBQtlAKmIFwpQ0d5_zhV1gS6pfpAImIoMc4kZinFkko"
+                role: "Founder, Nexus Retail"
               },
               {
                 text: "The SEO strategy wasn't just keywords; it was authority. 300% growth in organic traffic over the last year.",
                 author: "David Miller",
-                role: "Head of Growth, FinTech Hub",
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuC8lhJbxhbNVUwQotx6VbxCM-tTuxokT9uA6VhPlSViWjEMEK3TJjCov2jU8Uakigib273--4b8LM-ZM0lFNlSHAbYSbtxO3G_pz7hj7uksLmLZHXPWiGlz6ijCXJEncMU8c0vQ6K2ijkbaNC5ojsoGRH66Ck39mOnAylt5eeEPibnq1GHwJypgdVxM8SS-VXsxLEFROIyPPdxd0A6GRVm4rgJm7ZgifEuD8DTUz0tH6dLY6kAfMqTrO2LB5lf2pdUHfcwY9T8BhLs"
+                role: "Head of Growth, FinTech Hub"
               }
             ].map((t, i) => (
               <motion.div 
@@ -233,13 +233,13 @@ const Home = () => {
                 whileHover={{ y: -5 }}
                 className="glass-panel p-10 rounded-xl border border-outline-variant/10 space-y-10 relative"
               >
-                <div className="absolute top-6 right-8 opacity-10">
+                <div className="absolute top-6 right-8 opacity-10" aria-hidden="true">
                   <Zap size={64} className="text-primary" />
                 </div>
-                <p className="text-on-surface-variant italic leading-relaxed text-lg">"{t.text}"</p>
+                <blockquote className="text-on-surface-variant italic leading-relaxed text-lg">"{t.text}"</blockquote>
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-full border-2 border-primary/20 overflow-hidden">
-                    <img src={t.img} alt={t.author} className="w-full h-full object-cover" />
+                  <div className="w-14 h-14 rounded-full border-2 border-primary/20 overflow-hidden surface-highest flex items-center justify-center">
+                    <span className="text-primary font-headline font-bold text-lg">{t.author.split(' ').map(n => n[0]).join('')}</span>
                   </div>
                   <div>
                     <h4 className="font-headline font-bold text-sm tracking-tight">{t.author}</h4>
@@ -254,7 +254,7 @@ const Home = () => {
 
       {/* CTA Section */}
       <section className="py-40 relative overflow-hidden bg-surface">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5" aria-hidden="true" />
         <div className="max-w-screen-2xl mx-auto px-8 relative z-10 text-center space-y-12">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -267,10 +267,10 @@ const Home = () => {
             Leveraging Salesforce expertise and digital precision to lead your market. No obligations, just growth.
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-            <button className="px-14 py-6 cyber-gradient text-[#062100] font-label font-black uppercase text-lg tracking-[0.15em] rounded-md hover:scale-105 transition-all shadow-[0_0_60px_rgba(173,255,133,0.2)]">
+            <Link to="/contact" className="px-14 py-6 cyber-gradient text-[#062100] font-label font-black uppercase text-lg tracking-[0.15em] rounded-md hover:scale-105 transition-all shadow-[0_0_60px_rgba(173,255,133,0.2)] inline-flex items-center min-h-[44px]">
               Transform Now
-            </button>
-            <div className="flex items-center gap-4 text-on-surface-variant/40">
+            </Link>
+            <div className="flex items-center gap-4 text-on-surface-variant/40" aria-hidden="true">
               <div className="w-12 h-[1px] bg-outline-variant" />
               <span className="font-mono text-xs uppercase tracking-widest">v2.0.44 Stable</span>
               <div className="w-12 h-[1px] bg-outline-variant" />

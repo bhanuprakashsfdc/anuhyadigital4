@@ -108,13 +108,11 @@ const Blog = () => {
         </div>
 
         <div className="flex justify-center items-center gap-6 pt-10">
-          <button className="w-14 h-14 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-all"><ChevronLeft size={24} /></button>
+          <button aria-label="Previous page" disabled className="w-14 h-14 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface-variant/40 cursor-not-allowed transition-all"><ChevronLeft size={24} /></button>
           <div className="flex items-center gap-4">
             <span className="font-headline text-2xl font-black text-primary border-b-2 border-primary pb-1">01</span>
-            <span className="font-headline text-2xl font-black text-on-surface-variant/40 hover:text-primary cursor-pointer transition-colors">02</span>
-            <span className="font-headline text-2xl font-black text-on-surface-variant/40 hover:text-primary cursor-pointer transition-colors">03</span>
           </div>
-          <button className="w-14 h-14 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-all"><ChevronRight size={24} /></button>
+          <button aria-label="Next page" disabled className="w-14 h-14 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface-variant/40 cursor-not-allowed transition-all"><ChevronRight size={24} /></button>
         </div>
       </section>
     </>

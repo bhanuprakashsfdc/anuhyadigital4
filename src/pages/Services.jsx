@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import { Cloud, Terminal, Bolt, BarChart, Shield, ArrowRight, CheckCircle } from 'lucide-react';
+import { Cloud, Terminal, Clock, Zap, GitBranch, Sparkles, ArrowRight, CheckCircle } from 'lucide-react';
 
 const Services = () => {
   const coreCompetencies = [
@@ -46,28 +47,10 @@ const Services = () => {
   ];
 
   const advantages = [
-    {
-      title: "Decade of Experience",
-      text: "Our lead architects bring 10+ years of Salesforce expertise to every project, ensuring you avoid pitfalls.",
-      icon: "history_edu",
-      wide: true
-    },
-    {
-      title: "Agile Precision",
-      text: "Rapid deployment cycles without compromising on the integrity of your codebase.",
-      icon: "bolt"
-    },
-    {
-      title: "System Interoperability",
-      text: "We specialize in making disparate systems talk to each other through robust API architecture.",
-      icon: "hub"
-    },
-    {
-      title: "Future-Proofed Tech",
-      text: "Our solutions are architected to evolve with Salesforce releases and cloud advancements.",
-      icon: "auto_awesome",
-      wide: true
-    }
+    { title: "Decade of Experience", text: "Our lead architects bring 10+ years of Salesforce expertise to every project, ensuring you avoid pitfalls.", icon: Clock, wide: true },
+    { title: "Agile Precision", text: "Rapid deployment cycles without compromising on the integrity of your codebase.", icon: Zap },
+    { title: "System Interoperability", text: "We specialize in making disparate systems talk to each other through robust API architecture.", icon: GitBranch },
+    { title: "Future-Proofed Tech", text: "Our solutions are architected to evolve with Salesforce releases and cloud advancements.", icon: Sparkles, wide: true }
   ];
 
   const caseStudies = [
@@ -111,12 +94,12 @@ const Services = () => {
               We specialize in complex Salesforce implementations and modern cloud solutions designed for high-velocity growth.
             </p>
             <div className="flex flex-wrap gap-6">
-              <button className="cyber-gradient text-[#062100] px-10 py-5 rounded-md font-label font-black uppercase text-sm tracking-widest hover:scale-105 transition-all shadow-[0_0_40px_rgba(173,255,133,0.2)]">
-                View Tech Stack
-              </button>
-              <button className="border border-outline-variant hover:bg-surface-high px-10 py-5 rounded-md font-label font-black uppercase text-sm tracking-widest text-primary transition-all">
+              <Link to="/portfolio" className="cyber-gradient text-[#062100] px-10 py-5 rounded-md font-label font-black uppercase text-sm tracking-widest hover:scale-105 transition-all shadow-[0_0_40px_rgba(173,255,133,0.2)] inline-flex items-center min-h-[44px]">
+                View Our Work
+              </Link>
+              <Link to="/about" className="border border-outline-variant hover:bg-surface-high px-10 py-5 rounded-md font-label font-black uppercase text-sm tracking-widest text-primary transition-all inline-flex items-center min-h-[44px]">
                 Our Methodology
-              </button>
+              </Link>
             </div>
           </motion.div>
           <div className="relative hidden lg:block">
@@ -190,18 +173,14 @@ const Services = () => {
                 className={`surface-high p-12 rounded-xl group relative overflow-hidden flex flex-col justify-between ${adv.wide ? 'md:col-span-2' : ''}`}
               >
                 <div className="space-y-8 relative z-10">
-                  <span className="material-symbols-outlined text-5xl text-primary opacity-40 group-hover:opacity-100 transition-opacity">
-                    {adv.icon}
-                  </span>
+                  <adv.icon size={40} className="text-primary opacity-40 group-hover:opacity-100 transition-opacity" strokeWidth={1.5} aria-hidden="true" />
                   <div className="space-y-4">
                     <h3 className="text-2xl font-bold font-headline">{adv.title}</h3>
                     <p className="text-on-surface-variant leading-relaxed text-sm max-w-md">{adv.text}</p>
                   </div>
                 </div>
-                <div className="absolute -right-10 -bottom-10 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity">
-                  <span className="material-symbols-outlined text-[200px]">
-                    {adv.icon}
-                  </span>
+                <div className="absolute -right-10 -bottom-10 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity" aria-hidden="true">
+                  <adv.icon size={200} strokeWidth={0.5} />
                 </div>
               </div>
             ))}
@@ -217,10 +196,10 @@ const Services = () => {
               <h2 className="text-4xl font-bold font-headline">Impact in <span className="text-primary italic">Action</span></h2>
               <p className="text-on-surface-variant text-lg">Real-world transformations for our partners.</p>
             </div>
-            <button className="group flex items-center gap-3 text-primary font-black uppercase text-xs tracking-widest">
+            <Link to="/portfolio" className="group flex items-center gap-3 text-primary font-black uppercase text-xs tracking-widest min-h-[44px]">
               See All Case Studies
               <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
-            </button>
+            </Link>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16">
@@ -267,9 +246,9 @@ const Services = () => {
             <p className="text-[#062100] font-body text-xl md:text-2xl font-medium max-w-xl mx-auto opacity-80 leading-relaxed">
               Let's discuss how our precision-led approach can transform your core operations.
             </p>
-            <button className="bg-surface text-on-surface px-14 py-6 rounded-md font-label font-black uppercase text-base tracking-widest hover:scale-105 active:scale-95 transition-all shadow-2xl">
+            <Link to="/contact" className="bg-surface text-on-surface px-14 py-6 rounded-md font-label font-black uppercase text-base tracking-widest hover:scale-105 active:scale-95 transition-all shadow-2xl inline-flex items-center min-h-[44px]">
               Schedule Architecture Review
-            </button>
+            </Link>
           </div>
         </div>
       </section>

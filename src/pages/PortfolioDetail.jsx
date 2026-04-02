@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { ArrowLeft, ArrowUpRight, Calendar, Clock, CheckCircle } from 'lucide-react';
@@ -192,7 +192,6 @@ const slugMap = {
 
 const PortfolioDetail = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
 
   const project = projects[id] || projects[slugMap[id]];
 
@@ -216,13 +215,10 @@ const PortfolioDetail = () => {
       </Helmet>
 
       <article className="px-8 py-24 md:py-40 max-w-screen-2xl mx-auto space-y-20">
-        <button
-          onClick={() => navigate(-1)}
-          className="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-all font-mono text-xs uppercase tracking-widest group"
-        >
+        <Link to="/portfolio" className="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-all font-mono text-xs uppercase tracking-widest group">
           <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
           Back to Portfolio
-        </button>
+        </Link>
 
         <header className="space-y-8">
           <div className="flex flex-wrap gap-3">
