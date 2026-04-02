@@ -1,5 +1,5 @@
 import React from 'react';
-import { WEBSITE_PHONETag } from '../constants/constants';
+import { Link } from 'react-router-dom';
 
 const FooterBanner = () => {
   return (
@@ -17,12 +17,12 @@ const FooterBanner = () => {
           <p className="text-on-surface-variant max-w-2xl mx-auto mb-8 leading-relaxed">
             Our dedicated team of experts is here to guide you through every step of your digital transformation journey, ensuring you succeed.
           </p>
-          <a href={WEBSITE_PHONETag} className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">
-            Call Us
+          <Link to="/contact.html" className="btn-primary inline-flex items-center gap-2 text-base px-8 py-4">
+            Get Free Consultation
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

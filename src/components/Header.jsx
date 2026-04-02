@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/images/logo/adlogo.png';
 import { WEBSITE_PHONE, WEBSITE_EMAIL, WEBSITE_PHONETag, WEBSITE_EMAILTag } from '../constants/constants';
 
@@ -33,34 +34,38 @@ const Header = () => {
       <nav className="bg-background/90 backdrop-blur-xl border-b border-outline-variant/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
-            <a href="/" className="flex items-center">
+            <Link to="/" className="flex items-center">
               <img src={logo} className="h-8 lg:h-10 w-auto" alt="Anuhya Digital" />
-            </a>
+            </Link>
 
             {/* Desktop nav */}
             <div className="hidden lg:flex items-center gap-1">
               {[
-                { label: 'Home', href: '/' },
-                { label: 'About', href: '/about-us.html' },
-                { label: 'Services', href: '/services.html' },
-                { label: 'Projects', href: '/projects.html' },
-                { label: 'Blog', href: '/blogs.html' },
-                { label: 'Contact', href: '/contact.html' },
+                { label: 'Home', to: '/' },
+                { label: 'About', to: '/about-us.html' },
+                { label: 'Services', to: '/services.html' },
+                { label: 'Projects', to: '/projects.html' },
+                { label: 'Blog', to: '/blogs.html' },
+                { label: 'Contact', to: '/contact.html' },
               ].map((item) => (
-                <a
+                <NavLink
                   key={item.label}
-                  href={item.href}
-                  className="px-4 py-2 text-sm font-medium text-on-surface-variant hover:text-primary transition-colors duration-300 font-label tracking-wide"
+                  to={item.to}
+                  className={({ isActive }) =>
+                    `px-4 py-2 text-sm font-medium transition-colors duration-300 font-label tracking-wide ${
+                      isActive ? 'text-primary' : 'text-on-surface-variant hover:text-primary'
+                    }`
+                  }
                 >
                   {item.label}
-                </a>
+                </NavLink>
               ))}
-              <a
-                href={WEBSITE_PHONETag}
+              <Link
+                to="/contact.html"
                 className="ml-4 btn-primary text-sm"
               >
                 Get A Quote
-              </a>
+              </Link>
             </div>
 
             {/* Mobile toggle */}
@@ -85,24 +90,29 @@ const Header = () => {
           <div className="lg:hidden bg-surface-high/95 backdrop-blur-xl border-t border-outline-variant/10">
             <div className="px-4 py-4 space-y-1">
               {[
-                { label: 'Home', href: '/' },
-                { label: 'About', href: '/about-us.html' },
-                { label: 'Services', href: '/services.html' },
-                { label: 'Projects', href: '/projects.html' },
-                { label: 'Blog', href: '/blogs.html' },
-                { label: 'Contact', href: '/contact.html' },
+                { label: 'Home', to: '/' },
+                { label: 'About', to: '/about-us.html' },
+                { label: 'Services', to: '/services.html' },
+                { label: 'Projects', to: '/projects.html' },
+                { label: 'Blog', to: '/blogs.html' },
+                { label: 'Contact', to: '/contact.html' },
               ].map((item) => (
-                <a
+                <NavLink
                   key={item.label}
-                  href={item.href}
-                  className="block px-4 py-3 text-on-surface-variant hover:text-primary hover:bg-surface-highest/50 rounded-lg transition-all duration-300 font-label"
+                  to={item.to}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={({ isActive }) =>
+                    `block px-4 py-3 rounded-lg transition-all duration-300 font-label ${
+                      isActive ? 'text-primary bg-surface-highest/50' : 'text-on-surface-variant hover:text-primary hover:bg-surface-highest/50'
+                    }`
+                  }
                 >
                   {item.label}
-                </a>
+                </NavLink>
               ))}
-              <a href={WEBSITE_PHONETag} className="block mt-4 btn-primary text-center text-sm">
+              <Link to="/contact.html" onClick={() => setIsMenuOpen(false)} className="block mt-4 btn-primary text-center text-sm">
                 Get A Quote
-              </a>
+              </Link>
             </div>
           </div>
         )}

@@ -46,8 +46,8 @@ const ClientSection = () => {
         <div className="relative overflow-hidden">
           <div className="flex items-center justify-center gap-8 md:gap-12 transition-all duration-500">
             {getVisibleClients().map((client, index) => (
-              <div key={`${current}-${index}`} className="flex-shrink-0 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
-                <img src={client} className="h-12 md:h-16 w-auto object-contain" alt={`client-${index + 1}`} />
+              <div key={`${current}-${index}`} className="flex-shrink-0 grayscale hover:grayscale-0 opacity-75 hover:opacity-100 transition-all duration-300">
+                <img src={client} loading="lazy" className="h-12 md:h-16 w-auto object-contain" alt={`Client logo ${index + 1}`} />
               </div>
             ))}
           </div>

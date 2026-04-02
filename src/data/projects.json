@@ -5,7 +5,7 @@
       "image": "assets/images/clients/webimages/salesforce.png",
       "title": "Salesforce Implementation ",
       "description": "Leading Oil Manufacture in EMEA",
-      "link": "/"
+      "link": null
     },
     {
       "id": 2,
@@ -77,14 +77,14 @@
         "image": "assets/images/clients/webimages/salesforce.png",
         "title": "Salesforce Implementation",
         "description": "Leading Gas Manufacture in Australia",
-        "link": "/"
-    }, 
+        "link": null
+    },
     {
         "id": 11,
         "category": "salesforce",
         "image": "assets/images/clients/webimages/salesforce.png",
         "title": "Salesforce Implementation",
         "description": "Leading Education firm in UK",
-        "link": "/"
+        "link": null
     }
 ]

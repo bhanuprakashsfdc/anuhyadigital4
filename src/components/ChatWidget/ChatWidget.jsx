@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { WEBSITE_WHATSAPP, WEBSITE_PHONETag, WEBSITE_EMAILTag } from '../../constants/constants';
 
 const ChatWidget = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -8,15 +9,15 @@ const ChatWidget = () => {
   };
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/918861789164', '_blank');
+    window.open(`https://wa.me/${WEBSITE_WHATSAPP}`, '_blank');
   };
 
   const makeCall = () => {
-    window.location.href = 'tel:+918861789164';
+    window.location.href = WEBSITE_PHONETag;
   };
 
   const sendEmail = () => {
-    window.location.href = 'mailto:hello@anuhyadigital.com';
+    window.location.href = WEBSITE_EMAILTag;
   };
 
   return (

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const services = [
@@ -107,12 +108,12 @@ const Services = () => {
               </div>
               <h4 className="text-lg font-semibold text-on-surface mb-2 font-headline">{service.title}</h4>
               <p className="text-sm text-on-surface-variant leading-relaxed mb-4">{service.description}</p>
-              <a href="/services.html" className="inline-flex items-center gap-1 text-sm text-primary font-medium group-hover:gap-2 transition-all duration-300">
-                Learn More
+              <Link to="/contact.html" className="inline-flex items-center gap-1 text-sm text-primary font-medium group-hover:gap-2 transition-all duration-300">
+                Get a Quote
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </a>
+              </Link>
             </div>
           ))}
         </div>

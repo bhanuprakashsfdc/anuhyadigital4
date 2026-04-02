@@ -11,20 +11,14 @@ const TeamSection = () => {
     },
     {
       imgSrc: "assets/images/img/team2.png",
-      role: "CONSULTANT",
-      name: "Jane Cooper",
+      role: "DEVELOPER",
+      name: "Alex Rivera",
       socialLinks: { instagram: "#", linkedin: "#", twitter: "#", facebook: "#" }
     },
     {
       imgSrc: "assets/images/img/team3.png",
       role: "CONSULTANT",
       name: "Cameron Williamson",
-      socialLinks: { instagram: "#", linkedin: "#", twitter: "#", facebook: "#" }
-    },
-    {
-      imgSrc: "assets/images/img/team1.png",
-      role: "CONSULTANT",
-      name: "Jane Cooper",
       socialLinks: { instagram: "#", linkedin: "#", twitter: "#", facebook: "#" }
     }
   ];
@@ -67,6 +61,7 @@ const TeamSection = () => {
               <div className="aspect-[3/4] overflow-hidden">
                 <img
                   src={member.imgSrc}
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   alt={member.name}
                 />

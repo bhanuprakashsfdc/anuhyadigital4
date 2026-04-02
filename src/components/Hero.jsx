@@ -1,14 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { WEBSITE_EMAILTag, WEBSITE_PHONETag } from '../constants/constants';
+import { Link } from 'react-router-dom';
 
 const Hero = ({
   heading,
-  subheading,
-  description,
 }) => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-20">
+    <section className="relative min-h-[85vh] lg:min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-20">
       {/* Background glow effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
@@ -31,18 +29,20 @@ const Hero = ({
         <h1 className="section-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-on-surface leading-tight mb-6">
           {heading}
           <br />
-          <span className="neon-gradient-text" dangerouslySetInnerHTML={{ __html: subheading }}></span>
+          <span className="neon-gradient-text">Your Reliable Digital Partner & Guide</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-on-surface-variant max-w-3xl mx-auto mb-10 leading-relaxed" dangerouslySetInnerHTML={{ __html: description }}></p>
+        <p className="text-lg md:text-xl text-on-surface-variant max-w-3xl mx-auto mb-10 leading-relaxed">
+          Trusted by 30+ businesses across India, UK, Australia &amp; EMEA for Salesforce implementation, web development, and digital growth.
+        </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href={WEBSITE_PHONETag} className="btn-primary text-base px-8 py-4">
-            Call Us
-          </a>
-          <a href={WEBSITE_EMAILTag} className="btn-outline text-base px-8 py-4">
-            Drop a Mail
-          </a>
+          <Link to="/contact.html" className="btn-primary text-base px-8 py-4">
+            Get Free Consultation
+          </Link>
+          <Link to="/services.html" className="btn-outline text-base px-8 py-4">
+            View Our Services
+          </Link>
         </div>
 
         {/* Stats bar */}
@@ -66,8 +66,6 @@ const Hero = ({
 
 Hero.propTypes = {
   heading: PropTypes.string.isRequired,
-  subheading: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
 };
 
 export default Hero;
