@@ -8,7 +8,7 @@ const blogPosts1 = [
     date: "2026-03-25",
     readTime: "14 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/salesforce-apex-best-practices.png",
     excerpt: "Master Salesforce Apex development with proven best practices for writing clean, scalable, and maintainable code that handles enterprise-grade workloads.",
     content: `<h2>Introduction</h2>
 <p>Salesforce Apex best practices are not just suggestions — they are the difference between a system that scales gracefully and one that collapses under load. As organizations increasingly rely on Salesforce as their core business platform, the quality of Apex code directly impacts user experience, data integrity, and system performance. Whether you are building custom triggers, batch processes, or REST API endpoints, the principles outlined in this guide will help you write production-ready code.</p>
@@ -159,7 +159,7 @@ export default class InfiniteAccountList extends LightningElement {
     date: "2026-03-22",
     readTime: "16 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/salesforce-lightning-web-components-guide.png",
     excerpt: "Build modern Salesforce UIs with Lightning Web Components. This guide covers component architecture, lifecycle hooks, data binding, and real-world patterns.",
     content: `<h2>Introduction</h2>
 <p>Salesforce Lightning Web Components (LWC) represent the modern standard for building user interfaces on the Salesforce platform. Built on web standards — Custom Elements, Shadow DOM, and ES Modules — LWC provides a lightweight, high-performance component model that feels familiar to developers coming from React, Vue, or vanilla JavaScript backgrounds. Since its general availability, LWC has replaced Aura as the recommended framework for new Salesforce UI development.</p>
@@ -328,7 +328,7 @@ disconnectedCallback() {
     date: "2026-03-18",
     readTime: "13 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/salesforce-soql-optimization-tips.png",
     excerpt: "Optimize Salesforce SOQL queries for large datasets with proven techniques including selective filters, indexed fields, query planning, and pagination patterns.",
     content: `<h2>Introduction</h2>
 <p>Salesforce SOQL optimization becomes critical when your org grows beyond a few hundred thousand records. What works fine with 10,000 records can timeout entirely with 10 million. Understanding how the Salesforce query optimizer works, which fields are indexed, and how to structure queries for maximum selectivity is essential knowledge for any Salesforce developer working at scale.</p>
@@ -469,7 +469,7 @@ export default class CursorInfiniteList extends LightningElement {
     date: "2026-03-15",
     readTime: "15 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/salesforce-rest-api-integration-guide.png",
     excerpt: "Design and implement robust Salesforce REST API integrations with authentication, error handling, rate limiting, and real-time data synchronization patterns.",
     content: `<h2>Introduction</h2>
 <p>Salesforce REST API integration is a cornerstone of modern enterprise architecture. Whether you are connecting Salesforce to an ERP system, syncing data with a marketing platform, or building a custom mobile app, understanding how to design robust integrations is essential. Poorly designed integrations lead to data inconsistencies, governor limit violations, and maintenance nightmares.</p>
@@ -607,7 +607,7 @@ export default class ExternalInfiniteList extends LightningElement {
     date: "2026-03-12",
     readTime: "15 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/react-19-new-features-developers.png",
     excerpt: "Explore React 19's groundbreaking features including the new compiler, Server Components, Actions, and enhanced hooks that are reshaping frontend development.",
     content: `<h2>Introduction</h2>
 <p>React 19 marks the most significant evolution of the React framework since the introduction of hooks. The React Compiler eliminates the need for manual memoization, Server Components change the data fetching paradigm, and Actions simplify form handling and mutations. These features collectively reduce boilerplate, improve performance, and make React applications easier to build and maintain.</p>
@@ -754,7 +754,7 @@ export default async function PostsPage() {
     date: "2026-03-08",
     readTime: "14 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/react-typescript-best-practices.png",
     excerpt: "Master React TypeScript patterns for scalable applications. Learn component typing, generic hooks, discriminated unions, and real-world architecture strategies.",
     content: `<h2>Introduction</h2>
 <p>React TypeScript best practices go far beyond adding type annotations to props. A well-typed React application catches bugs at compile time, serves as living documentation, and enables powerful refactoring with confidence. However, achieving good TypeScript coverage in React requires understanding specific patterns for components, hooks, context, and state management that differ from vanilla TypeScript usage.</p>
@@ -901,7 +901,7 @@ function ProductGrid() {
     date: "2026-03-05",
     readTime: "12 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/css-container-queries-responsive-design.png",
     excerpt: "Learn CSS container queries for truly component-based responsive design. Break free from viewport-dependent layouts with practical examples and patterns.",
     content: `<h2>Introduction</h2>
 <p>CSS container queries solve one of the longest-standing limitations in web design: the inability for a component to respond to its own container's size rather than the viewport. For decades, responsive design meant media queries tied to screen width. A card component that looks great in a full-width layout breaks when placed in a sidebar because it has no way to know it's in a smaller container. Container queries change this fundamentally.</p>
@@ -1060,7 +1060,7 @@ new InfiniteFeed(
     date: "2026-03-01",
     readTime: "13 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/javascript-es2026-features-explained.png",
     excerpt: "Discover JavaScript ES2026 features including pipeline operator, records and tuples, pattern matching, and decorators with practical code examples.",
     content: `<h2>Introduction</h2>
 <p>JavaScript ES2026 brings several long-awaited features to the language that significantly improve developer ergonomics and code clarity. The pipeline operator enables readable function composition, decorators provide clean metaprogramming capabilities, and the ongoing proposals for records, tuples, and pattern matching promise to make JavaScript more expressive for complex data manipulation.</p>
@@ -1190,7 +1190,7 @@ loadMore(store); // Initial load&lt;/code&gt;&lt;/pre&gt;</code></pre>
     date: "2026-02-25",
     readTime: "14 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/ai-powered-web-design-tools-techniques.png",
     excerpt: "Explore AI web design tools transforming how we create websites. From layout generation to color schemes, learn practical techniques for AI-assisted design workflows.",
     content: `<h2>Introduction</h2>
 <p>AI web design tools have matured from experimental novelties into production-ready instruments that genuinely accelerate the design process. These tools do not replace designers — they augment human creativity by automating repetitive tasks, generating starting points, and exploring design spaces faster than manual iteration allows. Understanding which tools to use for which tasks, and how to integrate them into your workflow, is now a competitive advantage.</p>
@@ -1341,7 +1341,7 @@ gallery.loadMore(); // Initial load&lt;/code&gt;&lt;/pre&gt;</code></pre>
     date: "2026-02-20",
     readTime: "15 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/generative-ai-ui-design-prompt-to-production.png",
     excerpt: "Bridge the gap between AI-generated designs and production code. Learn systematic workflows for converting generative AI output into usable, accessible interfaces.",
     content: `<h2>Introduction</h2>
 <p>Generative AI UI design has matured to the point where AI can produce visually compelling interface mockups in seconds. However, the gap between a beautiful AI-generated image and production-ready code remains significant. This guide covers systematic workflows for taking generative AI output from concept to production, ensuring the final product is accessible, performant, and maintainable.</p>

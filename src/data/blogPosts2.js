@@ -8,7 +8,7 @@ const blogPosts2 = [
     date: "2026-03-10",
     readTime: "14 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/salesforce-data-cloud-unifying-customer-data.png",
     excerpt: "Learn how Salesforce Data Cloud unifies customer data from multiple sources to power real-time personalization, segmentation, and activation across channels.",
     content: `<h2>Introduction</h2>
 <p>Salesforce Data Cloud (formerly Salesforce CDP) represents a fundamental shift in how organizations manage and activate customer data. By ingesting data from every touchpoint — CRM records, web analytics, mobile apps, email engagement, purchase history, and third-party sources — Data Cloud creates a unified customer profile that enables true 1:1 personalization at scale. This is not just another data warehouse; it is a real-time identity resolution and activation engine built into the Salesforce platform.</p>
@@ -165,7 +165,7 @@ export default class SegmentExplorer extends LightningElement {
     date: "2026-03-07",
     readTime: "13 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/salesforce-flow-automation-no-code-mastery.png",
     excerpt: "Master Salesforce Flow automation with advanced patterns for record-triggered flows, screen flows, and orchestrated processes that replace custom code.",
     content: `<h2>Introduction</h2>
 <p>Salesforce Flow automation has evolved into a powerful platform capable of handling complex business processes that previously required Apex code. With record-triggered flows, screen flows, orchestrations, and platform event-triggered flows, admins and developers can build sophisticated automations using a visual builder while maintaining performance and governor limit efficiency.</p>
@@ -312,7 +312,7 @@ export default class FlowLogViewer extends LightningElement {
     date: "2026-03-04",
     readTime: "16 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/nextjs-15-app-router-production-applications.png",
     excerpt: "Build production-ready applications with Next.js 15 App Router. Master Server Components, route handlers, middleware, caching strategies, and deployment patterns.",
     content: `<h2>Introduction</h2>
 <p>Next.js 15 App Router represents the culmination of years of evolution in React-based web frameworks. By embracing React Server Components, streaming rendering, and a file-system-based router with layouts, loading states, and error boundaries, Next.js 15 provides a complete framework for building production web applications. Understanding its conventions and performance characteristics is essential for modern full-stack development.</p>
@@ -469,7 +469,7 @@ export function FeedSkeleton() {
     date: "2026-02-28",
     readTime: "13 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/tailwind-css-v4-advanced-utility-patterns.png",
     excerpt: "Master Tailwind CSS v4 with advanced patterns including the new CSS-first configuration, container queries, cascade layers, and dynamic utility generation.",
     content: `<h2>Introduction</h2>
 <p>Tailwind CSS v4 is a ground-up rewrite that moves configuration from JavaScript to CSS, introduces first-class container query support, and leverages modern CSS features like cascade layers and @property. The result is faster builds, smaller output, and a more intuitive developer experience. Understanding these new patterns unlocks the full potential of utility-first CSS in modern applications.</p>
@@ -613,7 +613,7 @@ export function FeedSkeleton() {
     date: "2026-02-24",
     readTime: "15 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/nodejs-microservices-architecture-guide.png",
     excerpt: "Design and implement Node.js microservices with proper service boundaries, inter-service communication, data management, and observability patterns.",
     content: `<h2>Introduction</h2>
 <p>Node.js microservices architecture enables teams to build, deploy, and scale individual services independently. The combination of Node.js's event-driven, non-blocking I/O model with microservice patterns produces systems that handle high throughput while remaining maintainable. However, microservices introduce distributed system complexity that requires careful architectural decisions around service boundaries, communication patterns, and data consistency.</p>
@@ -765,7 +765,7 @@ new EventFeed(document.getElementById('events'), '/api/events');&lt;/code&gt;&lt
     date: "2026-02-20",
     readTime: "14 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/graphql-vs-rest-api-strategy-2026.png",
     excerpt: "Compare GraphQL and REST API approaches with practical guidance on when to use each, hybrid architectures, performance considerations, and real-world implementation patterns.",
     content: `<h2>Introduction</h2>
 <p>The GraphQL vs REST debate has matured beyond "which is better" to "which is right for this use case." Both technologies have distinct strengths: REST excels at simple CRUD operations with HTTP caching, while GraphQL shines when clients need flexible data fetching across related resources. Many production systems use both — REST for simple endpoints and GraphQL for complex data requirements.</p>
@@ -924,7 +924,7 @@ function InfiniteFeed() {
     date: "2026-02-16",
     readTime: "14 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/ai-driven-responsive-design-adaptive-layouts.png",
     excerpt: "Implement AI-driven responsive design that adapts layouts based on user behavior, device capabilities, and content characteristics using machine learning models.",
     content: `<h2>Introduction</h2>
 <p>AI-driven responsive design goes beyond fixed breakpoints by using machine learning to analyze user behavior, device capabilities, and content characteristics to dynamically adapt layouts. Instead of designing three breakpoints (mobile, tablet, desktop), AI-responsive systems continuously optimize the layout for each user's specific context. This approach produces interfaces that feel tailor-made for every visitor.</p>
@@ -1106,7 +1106,7 @@ setInterval(() =&gt; engine.apply(engine.computeAdaptations()), 5000);&lt;/code&
     date: "2026-02-12",
     readTime: "13 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/web-design-trends-2026-ai-generated-layouts.png",
     excerpt: "Explore 2026 web design trends including AI-generated layouts, smart components, spatial interfaces, and data-driven design systems that are reshaping the web.",
     content: `<h2>Introduction</h2>
 <p>Web design trends in 2026 are defined by the convergence of AI capabilities with mature CSS features. AI-generated layouts, smart components that adapt to content, spatial interfaces inspired by spatial computing, and data-driven design systems represent the cutting edge of modern web design. Understanding these trends helps teams make informed decisions about which innovations to adopt and which to observe.</p>
@@ -1265,7 +1265,7 @@ smart-card [slot="body"] {
     date: "2026-02-08",
     readTime: "15 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/webassembly-production-high-performance-apps.png",
     excerpt: "Deploy WebAssembly in production applications. Learn compilation strategies, memory management, JavaScript interop, and real-world performance optimization patterns.",
     content: `<h2>Introduction</h2>
 <p>WebAssembly (Wasm) delivers near-native performance in the browser, enabling applications that were previously impossible on the web: real-time video processing, physics simulations, game engines, and computationally intensive data analysis. Production WebAssembly requires understanding compilation strategies, memory management, and efficient JavaScript interop patterns that differ fundamentally from JavaScript development.</p>
@@ -1438,7 +1438,7 @@ new WasmInfiniteFeed(document.getElementById('feed')).init();&lt;/code&gt;&lt;/p
     date: "2026-02-04",
     readTime: "16 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/advanced-typescript-patterns-generics-mapped-types.png",
     excerpt: "Master advanced TypeScript patterns including generic constraints, mapped types, conditional types, template literal types, and type-safe API client generation.",
     content: `<h2>Introduction</h2>
 <p>Advanced TypeScript patterns transform the type system from a bug-catching tool into a powerful design instrument. Generic constraints ensure type safety across reusable code, mapped types transform existing types programmatically, conditional types enable type-level logic, and template literal types provide string manipulation at the type level. Together, these features enable building APIs that are both flexible and perfectly typed.</p>

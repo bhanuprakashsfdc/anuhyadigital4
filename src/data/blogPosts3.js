@@ -9,7 +9,7 @@ const blogPosts3 = [
     date: "2026-03-15",
     readTime: "14 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/building-ai-chatbots-for-websites.png",
     excerpt: "Learn how to build intelligent AI chatbots for modern websites using the latest APIs, frameworks, and conversational design patterns that drive engagement.",
     content: `<h2>Introduction</h2>
 <p>AI chatbot web development has evolved dramatically over the past few years. What once required extensive NLP infrastructure and dedicated ML teams can now be accomplished with a few API calls and well-structured prompts. Modern chatbots go beyond simple FAQ responders — they understand context, maintain conversation history, integrate with business systems, and provide genuinely helpful interactions that improve user experience and drive conversions.</p>
@@ -381,7 +381,7 @@ class VirtualChatList {
     date: "2026-03-18",
     readTime: "13 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/machine-learning-in-frontend-development.png",
     excerpt: "Explore how machine learning models can be integrated directly into frontend applications using TensorFlow.js, ONNX Runtime, and browser-native APIs.",
     content: `<h2>Introduction</h2>
 <p>Machine learning in frontend development has transitioned from experimental curiosity to practical necessity. With libraries like TensorFlow.js, ONNX Runtime Web, and the built-in Web Neural Network API, developers can now run sophisticated ML models directly in the browser without sending sensitive data to external servers. This opens up possibilities for real-time image classification, natural language processing, anomaly detection, and personalized user experiences — all running client-side with minimal latency.</p>
@@ -746,7 +746,7 @@ function scheduleInference(predictionFn, items) {
     date: "2026-03-22",
     readTime: "12 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/css-scroll-driven-animations.png",
     excerpt: "Master the CSS scroll-driven animations API to build performant, GPU-accelerated scroll effects without JavaScript scroll event listeners.",
     content: `<h2>Introduction</h2>
 <p>CSS scroll-driven animations represent a fundamental shift in how we create scroll-based visual effects on the web. Instead of relying on JavaScript scroll event listeners that trigger layout recalculations and cause jank, the scroll-driven animations API ties CSS animations directly to scroll position. This approach leverages the browser's compositor thread, resulting in buttery-smooth 60fps animations that do not block the main thread or degrade performance on low-powered devices.</p>
@@ -1162,7 +1162,7 @@ monitorScrollPerformance();
     date: "2026-03-25",
     readTime: "15 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/progressive-web-apps-2026-offline-first.png",
     excerpt: "Build resilient offline-first PWAs in 2026 using advanced service worker strategies, background sync, and the latest browser APIs for reliable experiences.",
     content: `<h2>Introduction</h2>
 <p>Progressive web apps in 2026 have matured into a first-class application platform. With broad support for service workers, the Background Sync API, periodic background sync, and the File System Access API, PWAs now deliver experiences that rival native applications. The offline-first paradigm — where the application works fully without a network connection and syncs when connectivity returns — has become the gold standard for reliability, especially in regions with inconsistent network coverage and for applications where data availability is critical.</p>
@@ -1669,7 +1669,7 @@ swManager.register();
     date: "2026-03-28",
     readTime: "14 min read",
     author: "Anuhya Digital",
-    image: "assets/images/blog/placeholder.png",
+    image: "assets/images/blog/web-performance-optimization-core-web-vitals.png",
     excerpt: "Master Core Web Vitals optimization techniques including LCP, INP, and CLS with practical strategies that deliver measurable performance improvements.",
     content: `<h2>Introduction</h2>
 <p>Web performance optimization in 2026 is anchored by three Core Web Vitals: Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS). These metrics directly impact search rankings, user engagement, and conversion rates. Google's ranking systems weight these signals heavily, making performance optimization a business-critical concern rather than a purely technical exercise.</p>
