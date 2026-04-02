@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { WEBSITE_NAME, WEBSITE_ADDRESS, WEBSITE_PHONE, WEBSITE_EMAIL, WEBSITE_LOCATION, WEBSITE_PHONETag, WEBSITE_EMAILTag, WEBSITE_FB, WEBSITE_Insta, WEBSITE_Linkedin, WEBSITE_X } from '../constants/constants';
 import Minifooter from './Minifooter';
 import FooterBanner from './FooterBanner';
@@ -13,7 +14,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {/* Brand */}
             <div>
-              <img src="assets/images/logo/adlogo.png" className="h-10 w-auto mb-4" alt="Anuhya Digital" />
+              <img src="assets/images/logo/adlogo.png" loading="lazy" className="h-10 w-auto mb-4" alt="Anuhya Digital" />
               <p className="text-sm text-on-surface-variant leading-relaxed mb-6">
                 Welcome to {WEBSITE_NAME}, where your digital transformation is our priority. As a leading player in software consulting, we provide top-notch Salesforce consulting, web development, SEO, and SMM services.
               </p>
@@ -39,15 +40,15 @@ const Footer = () => {
               <div className="w-8 h-0.5 bg-primary mb-4"></div>
               <ul className="space-y-3">
                 {[
-                  { label: 'About Company', href: '/about-us.html' },
-                  { label: 'Meet the Team', href: '/team.html' },
-                  { label: 'News & Media', href: '/blogs.html' },
-                  { label: 'Our Projects', href: '/projects.html' },
+                  { label: 'About Company', to: '/about-us.html' },
+                  { label: 'Meet the Team', to: '/team.html' },
+                  { label: 'News & Media', to: '/blogs.html' },
+                  { label: 'Our Projects', to: '/projects.html' },
                 ].map((link) => (
                   <li key={link.label}>
-                    <a href={link.href} className="text-sm text-on-surface-variant hover:text-primary transition-colors duration-300">
+                    <Link to={link.to} className="text-sm text-on-surface-variant hover:text-primary transition-colors duration-300">
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -59,14 +60,14 @@ const Footer = () => {
               <div className="w-8 h-0.5 bg-primary mb-4"></div>
               <ul className="space-y-3">
                 {[
-                  { label: 'Contact Us', href: '/contact.html' },
-                  { label: 'Terms And Conditions', href: '/terms-conditions.html' },
-                  { label: 'Privacy Policy', href: '/privacy-policy.html' },
+                  { label: 'Contact Us', to: '/contact.html' },
+                  { label: 'Terms And Conditions', to: '/terms-conditions.html' },
+                  { label: 'Privacy Policy', to: '/privacy-policy.html' },
                 ].map((link) => (
                   <li key={link.label}>
-                    <a href={link.href} className="text-sm text-on-surface-variant hover:text-primary transition-colors duration-300">
+                    <Link to={link.to} className="text-sm text-on-surface-variant hover:text-primary transition-colors duration-300">
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import PromoSection from './components/PromoSection'
 import AboutSection from './components/AboutSection'
 import Services from './components/Services'
+import HomeLeadForm from './components/HomeLeadForm/HomeLeadForm'
 import ProjectSection from './components/ProjectSection'
 import WorkingProcessSection from './components/WorkingProcessSection'
 import ClientSection from './components/ClientSection/ClientSection'
@@ -14,12 +15,11 @@ function App() {
     <>
       <Hero
         heading="Transform Your Business"
-        subheading="Your Reliable Digital<br /><span>Partner & Guide</span>"
-        description="Our dedicated team of experts is here to guide you through every step of your<br /> digital transformation journey, ensuring you make informed choices."
       />
       <PromoSection />
       <AboutSection />
       <Services />
+      <HomeLeadForm />
       <ProjectSection />
       <WorkingProcessSection />
       <ClientSection />
